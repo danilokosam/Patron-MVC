@@ -1,5 +1,6 @@
 </div>
-<a href="index.php?grabarper=">Nuevo personaje</a>
-
+</div>
+<script src="./Vista/scripts/mov-star.js"></script>
 </body>
+
 </html>

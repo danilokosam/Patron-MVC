@@ -1,7 +1,7 @@
 <?php
 function mostrar_formulario()
 {
-    // INCLUIR VISTA
+    include_once '/xampp/htdocs/Patron-MVC-DAN/Patron-MVC/View/alta_brawler_vista.php';
 }
 
 function grabar_datos()

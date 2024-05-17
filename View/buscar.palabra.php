@@ -2,8 +2,8 @@
 <?php
 
 
-// echo '<div id="content" class="articulo">' . $texto . '</div>';
-// echo '<script>let palabra="' . $palabra . '"</script>';
+echo '<div id="content" class="articulo">' . $texto . '</div>';
+echo '<script>let palabra="' . $palabra . '"</script>';
 
 
 ?>

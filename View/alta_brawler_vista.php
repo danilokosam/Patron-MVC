@@ -1,9 +1,9 @@
 <?php
 
-include_once '../header.php';
+include_once '/xampp/htdocs/Patron-MVC-DAN/Patron-MVC/header.php';
 ?>
 
-<form action="./index.php" method="post">
+<form action="../index.php" method="post">
     <fieldset>
         <legend>Nombre del brawler</legend>
         <label for="titulo">Título:</label>

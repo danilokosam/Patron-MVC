@@ -1,13 +1,14 @@
-<!-- Resultado de la búsqueda: -->
+Resultado de la búsqueda:
 <?php
 
-
-echo '<div id="content" class="articulo">' . $texto . '</div>';
-echo '<script>let palabra="' . $palabra . '"</script>';
+if ($descripcion == null) {
+    echo '<div id="content" class="brawler">La palabra no se encontró 😢</div>';
+} else {
+    echo '<div id="content" class="brawler">' . $descripcion . '</div>';
+    echo '<script>let palabra="' . $palabraBuscar . '"</script>';
+}
 
 
 ?>
 
-<!-- <script type="text/javascript" src="Vista/scripts/codigo.js">
-
-</script> -->
+<script type="text/javascript" src="/View/scripts/codigo.js"></script>

@@ -25,8 +25,19 @@ class ConnDB
             // Configura PDO para lanzar excepciones en caso de error
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
+            // Captura la excepción y obtén detalles del error
+            $error_code = $e->getCode();
+            $error_msg = $e->getMessage();
+            $error_file = $e->getFile();
+            $error_line = $e->getLine();
+
+            //Construye un mensaje de error detallado
+            $error_detallado = "Error: {$error_msg}\nCódigo de Error:{$error_code}\nArchivo:{$error_file}\nLínea:{$error_line}";
+
             // Si hay un error, escribe el mensaje en un archivo de texto y lanza una exepción
-            file_put_contents('PDOError.txt', $e->getMessage(), FILE_APPEND);
+            file_put_contents('PDOError.txt', $error_detallado, FILE_APPEND);
+
+            // Lanza una nueva excepción si es necesario o maneja el error
             throw new Exception('Conexión fallida 😢: ' . $e->getMessage());
         }
     }

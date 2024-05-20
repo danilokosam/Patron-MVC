@@ -32,8 +32,8 @@ class Comentario
 
     public function visualizar_comentario()
     {
-        $cadenta_de_datos = $this->id_personaje . '#' . $this->texto;
-        return $cadenta_de_datos;
+        $cadena_de_datos = $this->id_personaje . '#' . $this->texto;
+        return $cadena_de_datos;
     }
 
     public function recuperar_comentario($id)

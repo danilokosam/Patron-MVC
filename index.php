@@ -1,6 +1,6 @@
 <?php
 
-include './header.php';
+include 'header.php';
 
 if (isset($_GET['grabarper'])) {
     include_once './Controller/grabarPersonajes.php';
@@ -9,10 +9,10 @@ if (isset($_GET['grabarper'])) {
     include_once './Controller/grabarPersonajes.php';
     grabar_datos();
 } elseif (isset($_POST['palabrabuscar'])) {
-    $palabrabuscar = $_POST['palabrabuscar'];
-    if ($palabrabuscar != "") {
+    $palabraBuscar = $_POST['palabrabuscar'];
+    if ($palabraBuscar != "") {
         include_once './Controller/buscarPalabra.php';
-        buscar($palabrabuscar);
+        buscar($palabraBuscar);
     }
 } elseif (isset($_GET['vercoment'])) {
     $id_personaje = $_GET['vercoment'];
@@ -28,4 +28,4 @@ if (isset($_GET['grabarper'])) {
     include_once './Controller/verTodosPersonajes.php';
 }
 
-include './footer.php';
+include 'footer.php';

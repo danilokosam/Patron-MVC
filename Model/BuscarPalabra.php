@@ -3,9 +3,9 @@
 
 function buscar_palabra($palabra)
 {
-    $db = new ConnDB(); // <-- Instanciamos la clase de conexión a la base de datos
+    $db = ConnDB::obtenerInstancia(); // Obtenemos la instancia única de la clase ConnDB
     $db->conectar(); // <-- Usamos el método conectar
-// En esta variable guardamos el resultado de la consulta en donde buscamos la palabra
+    // En esta variable guardamos el resultado de la consulta en donde buscamos la palabra
     $consulta_busqueda_palabra = "SELECT id,nombre,descripcion FROM brawlers WHERE MATCH(descripcion) AGAINST ('" . $palabra . "')";
     // Ejecutamos la consulta SQL almacenada en la variable $consulta_busqueda_palabra utilizando el método ejecutarSQL() del objeto $db
     $consulta = $db->ejecutarSQL($consulta_busqueda_palabra);

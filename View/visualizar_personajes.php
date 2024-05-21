@@ -10,6 +10,7 @@ foreach ($personaje_array as $objeto_personaje) {
     echo '<div>ID: ' . $personaje_array_datos[0] . '</div>';
     echo '<div>Nombre: ' . $personaje_array_datos[1] . '</div>';
     echo '<div>Descripción: ' . $personaje_array_datos[2] . '</div>';
+    echo '</div>';
 
     //     // FALTA IMPLEMENTAR: REALIZAR COMENTARIO
 }

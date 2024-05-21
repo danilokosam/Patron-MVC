@@ -16,7 +16,7 @@ class Personaje
         $this->personaje_nombre = $personaje_nombre;
         $this->personaje_descripcion = $personaje_descripcion;
         // Creación de un nuevo objeto ConnDB
-        $this->mi_conexion_db = new ConnDB();
+        $this->mi_conexion_db = ConnDB::obtenerInstancia();
     }
 
     // Métodos para obtener los valores de las propiedades

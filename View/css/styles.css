@@ -2,19 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
-
 :root {
   color-scheme: ligth dark;
 }
-
+.brawler {
+  min-height: 300px;
+  max-height: 500px;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: justify;
+}
+/* --------- */
 h1 {
   text-align: center;
   margin: 20px 0;
   font-size: 5rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
 }
 
 .contenedor-personajes {
@@ -46,21 +58,6 @@ ul {
 li {
   list-style: none;
 }
-
-.brawler {
-  height: 300px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 1.2rem;
-  flex-direction: column;
-  padding: 20px;
-  border: 1px solid white;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -126,5 +123,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  transform: scale(2.0);
+  transform: scale(2);
 }

@@ -1,6 +1,6 @@
 <?php
 
-include 'header.php';
+include './header.php';
 
 if (isset($_GET['grabarper'])) {
     include_once './Controller/grabarPersonajes.php';
@@ -28,4 +28,4 @@ if (isset($_GET['grabarper'])) {
     include_once './Controller/verTodosPersonajes.php';
 }
 
-include 'footer.php';
+include './footer.php';

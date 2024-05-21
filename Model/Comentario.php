@@ -12,7 +12,7 @@ class Comentario
         $this->id;
         $this->id_personaje = $id_personaje;
         $this->texto = $texto;
-        $this->mi_connDB = new ConnDB();
+        $this->mi_connDB = ConnDB::obtenerInstancia();
     }
 
     public function get_id()

@@ -6,7 +6,7 @@ class ColPersonajes // <-- Colección Personajes
 
     public function __construct()
     {
-        $this->mi_conexion_db = new ConnDB(); // <-- Creamos la instancia
+        $this->mi_conexion_db = ConnDB::obtenerInstancia(); // <-- Creamos la instancia
         $this->mi_conexion_db->conectar(); // <-- Nos conectamos
         try {
             $consulta_SQL = 'SELECT * FROM brawlers'; // <-- Hacemos la consulta para obtener todo de la tabla

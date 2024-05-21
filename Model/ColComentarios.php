@@ -8,7 +8,7 @@ class ColComentarios
 
     public function __construct($id_personaje) // <-- Recibimos el id del personaje a recuperar
     {
-        $this->mi_conexionDB = new ConnDB(); // <-- // Crea una nueva conexión a la base de datos
+        $this->mi_conexionDB = ConnDB::obtenerInstancia(); // <-- // Crea una nueva conexión a la base de datos
         $this->mi_conexionDB->conectar(); // <-- Establece la conexión con la base de datos
         // Aqui hacemos la consulta donde el idP es el id del personaje donde queremos recuperar los comentarios
         $consulta_SQL = "SELECT * FROM comentarios WHERE idP = '$id_personaje'";

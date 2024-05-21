@@ -1,6 +1,7 @@
 <?php
 function buscar($palabra)
 {
+
     include_once './Model/BuscarPalabra.php';
     $resultado = buscar_palabra($palabra);
 

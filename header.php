@@ -18,6 +18,7 @@
         <div class="space space-2"></div>
         <div class="space space-3"></div>
         <h1>Brawlers</h1>
+        <h1><a href="index.php">INICIO</a></h1>
         <div class="contenedor-personajes">
             <nav>
                 <ul>

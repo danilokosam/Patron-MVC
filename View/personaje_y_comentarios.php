@@ -10,9 +10,9 @@
 </div>
 
 <?php
-
+// Comentarios
 foreach ($array_comentarios_personaje as $objeto_comentario) {
-    echo '<div class="comentario">';
+    echo '<div class="comentarios">';
     echo '<div>' . $objeto_comentario->get_texto() . '</div>';
     echo '</div>';
 }

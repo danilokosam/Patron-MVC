@@ -1,0 +1,7 @@
+Error: SQLSTATE[HY000] [1049] Unknown database 'brawlers'
+Código de Error:1049
+Archivo:C:\xampp\htdocs\Patron-MVC\Model\ConnDB.php
+Línea:107Error: SQLSTATE[HY000] [1049] Unknown database 'brawlers'
+Código de Error:1049
+Archivo:C:\xampp\htdocs\Patron-MVC\Model\ConnDB.php
+Línea:107

@@ -12,4 +12,4 @@ $texto_personaje = $array_contenido_personaje[2];
 $coleccion_comentarios = new ColComentarios($id_personaje);
 $array_comentarios_personaje = $coleccion_comentarios->ver_todos();
 
-include_once './Patron-MVC/View/personaje_y_comentarios.php';
+include_once './View/personaje_y_comentarios.php';

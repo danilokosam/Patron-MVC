@@ -7,6 +7,7 @@
 :root {
   color-scheme: ligth dark;
 }
+
 .brawler {
   min-height: 300px;
   max-height: 500px;
@@ -20,18 +21,19 @@
   font-size: 1.2rem;
   padding: 20px;
   text-align: justify;
+  border: 1px solid white;
 }
 /* --------- */
-h1 {
+/* h1 {
   text-align: center;
   margin: 20px 0;
   font-size: 5rem;
   font-weight: 800;
-}
+} */
 
 .contenedor-personajes {
   padding: 30px;
-  width: 600px;
+  width: 800px;
   height: auto;
   /* border: 1px solid white; */
   /* box-shadow: 1px 1px 10px white; */
@@ -39,31 +41,48 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
 }
 
 nav {
   width: 100%;
-  height: 100%;
-  padding: 20px;
-  /* border-bottom: 1px solid white; */
+  height: 100px;
 }
 
 ul {
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 li {
   list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a {
   text-decoration: none;
   color: white;
-  text-shadow: 1px 1px 7px white;
+  font-size: 1.2rem;
+  font-weight:700;
+  letter-spacing: 5px;
+  transition: all .3s ease;
 }
 
+a:hover {
+  background-image: linear-gradient(
+    -225deg,
+    #3700ff 0%,
+    #6700d6 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-clip: text;
+  color: transparent !important;;
+}
 /* CODIGO DE BACKGROUND DE ESTRELLAS*/
 
 .container {
@@ -106,7 +125,7 @@ a {
 input[type="text"] {
   border: none;
   border-bottom: 1px solid white;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 input:focus {
@@ -126,12 +145,43 @@ input[type="submit"]:hover {
   transform: scale(2);
 }
 
-
 .comentarios {
   width: 100%;
   height: 100%;
-  border: 1px solid white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.com {
+  font-size: 1rem;
+}
+
+/* ANIMACION H1*/
+#app {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 7rem;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-clip: border-box;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: textclip 2s linear infinite;
+  cursor: default;
+  user-select: none;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
